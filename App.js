@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Image, Text, TextInput, View } from 'react-native';
 
 const App = () => {
@@ -16,6 +16,8 @@ const App = () => {
       <Text>I Hate You</Text>
       <Photo />
       <TextInput style={{ borderWidth: 1 }} />
+      <BoxGreen />
+      <Profile />
     </View>
   )
 };
@@ -31,6 +33,25 @@ const Photo = () => {
       height: 100
     }}
   />
+}
+
+class BoxGreen extends Component {
+  render() {
+    return <Text>Who am I</Text>
+  }
+}
+
+class Profile extends Component {
+  render() {
+    return (
+      <View>
+        <Image source={{ uri: 'https://placeimg.com/150/150/nature' }}
+          style={{ width: 150, height: 150, borderRadius: 75 }}
+        />
+        <Text>Ini pohon Sakura</Text>
+      </View>
+    )
+  }
 }
 
 export default App;
