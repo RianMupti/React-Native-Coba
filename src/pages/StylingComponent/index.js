@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, Text, View, StyleSheet } from 'react-native';
-import lily from './lily.jpg';
+import lily from '../../assets/images/lily.jpg';
 
-const StylingReactNativeComponent = () => {
+const StylingComponent = () => {
     return (
         <View>
             <Text style={style.text}>Styling Component Hadeh</Text>
@@ -85,4 +85,4 @@ const style = StyleSheet.create({
     },
 })
 
-export default StylingReactNativeComponent;
+export default StylingComponent;
