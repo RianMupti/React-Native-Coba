@@ -1,8 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
-import lily from './lily.jpg';
+import lily from '../../assets/images/lily.jpg';
 
-const PositionReactNative = () => {
+const Position = () => {
     return (
         <View style={styles.wrapper}>
             <Text style={{ fontSize: 18 }}>Materi Position</Text>
@@ -15,7 +15,7 @@ const PositionReactNative = () => {
     )
 }
 
-export default PositionReactNative;
+export default Position;
 
 const styles = StyleSheet.create({
     wrapper: {
