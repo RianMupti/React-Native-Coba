@@ -3,7 +3,33 @@ import { Text, View, Image } from 'react-native';
 import lily from '../../assets/images/lily.jpg';
 
 class FlexBox extends Component {
+    constructor(props) {
+        super(props);
+        console.log("==> constructor")
+        this.state = {
+            subscriber: 100
+        }
+    }
+
+    componentDidMount() {
+        console.log("==> component did mount")
+        setTimeout(() => {
+            this.setState({
+                subscriber: 400
+            });
+        }, 3000);
+    }
+
+    componentDidUpdate() {
+        console.log("==> component did update")
+    }
+
+    componentWillUnmount() {
+        console.log("==> component will unmount")
+    }
+
     render() {
+        console.log("==> render")
         return (
             <View>
                 <View style={{
@@ -29,7 +55,7 @@ class FlexBox extends Component {
                     <Image source={lily} style={{ width: 100, height: 100, borderRadius: 50, margin: 20 }} />
                     <View >
                         <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Rian Mupti Jauhari</Text>
-                        <Text>Sang Pemalas</Text>
+                        <Text>{this.state.subscriber} = Sang Pemalas</Text>
                     </View>
                 </View>
             </View>
