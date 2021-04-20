@@ -18,6 +18,7 @@ const App = () => {
         {/* <SampleComponent /> */}
         {/* <StylingComponent /> */}
         {show && <FlexBox />}
+        {/* <FlexBox /> */}
         {/* <Position /> */}
       </ScrollView>
     </View>
